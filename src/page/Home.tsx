@@ -11,7 +11,7 @@ const Home = () => {
   const { count } = useAppSelector((state) => state.counter);
   const dispatch = useAppDispatch();
   return (
-    <div className="flex justify-center items-center gap-4">
+    <div className="flex justify-center items-center gap-4 my-16">
       <button
         className="p-3 border-2 border-yellow-500 rounded-md mt-8"
         onClick={() => dispatch(decrement())}
