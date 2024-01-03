@@ -3,6 +3,7 @@ import Main from "../layout/Main";
 import Home from "../page/Home";
 import NotFound from "../page/NotFound";
 import Login from "../page/Login";
+import Signup from "../page/Signup";
 
 export const router = createBrowserRouter([
   {
@@ -17,10 +18,14 @@ export const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+      {
+        path: "/signup",
+        element: <Signup />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
-  },
-  {
-    path: "*",
-    element: <NotFound />,
   },
 ]);
